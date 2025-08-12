@@ -16,16 +16,18 @@
                 <input id="start" type="number" value="0">
                 <label for="cash">Real Cash</label>
                 <input id="cash" type="number" value="0" readonly>
+                <label for="gain">Gain</label>
+                <input id="gain" type="number" value="0" readonly>
             </div>
         </header>
         <div class="row">
             <div class="col">
                 <div class="fee">
-                    <p id="b-fee">Rp-0</p>
+                    <p id="b-fee">Fee (0)</p>
                 </div>
                 <div class="controller">
                     <div class="group">
-                        <label for="b-lot">Buy Lot</label>
+                        <label for="b-lot">Buy Lot *<span id="suggested-lot">0</span></label>
                         <input id="b-lot" type="number" value="0" readonly>
                     </div>
                     <div class="group">
@@ -36,7 +38,7 @@
             </div>
             <div class="col">
                 <div class="fee">
-                    <p id="s-fee">Rp-0</p>
+                    <p id="s-fee">Fee (0)</p>
                 </div>
                 <div class="controller">
                     <div class="group">
