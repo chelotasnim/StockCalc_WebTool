@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    display: none;
+}
+
+#page {
+    position: relative;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    padding: 72px 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(50, 200, 50, .6);
+}
+
+.cash {
+    width: 732px;
+}
+
+.cash label {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: rgba(50, 180, 50);
+}
+
+.cash input {
+    display: block;
+    max-width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 84px;
+    color: rgba(50, 180, 50);
+}
+
+.row {
+    display: flex;
+    padding: 32px 100px;
+    justify-content: center;
+    gap: 32px;
+}
+
+.fee {
+    padding: 18px;
+    padding-left: 12px;
+    font-size: 24px;
+    color: rgb(255, 50, 50);
+}
+
+.controller .group {
+    margin-top: 24px;
+}
+
+.controller label {
+    display: block;
+    padding-left: 12px;
+    font-size: 14px;
+}
+
+.controller input {
+    display: block;
+    padding: 12px;
+    min-width: 350px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(40, 40, 40);
+    font-size: 24px;
+}
+
+@media(max-width: 850px) {
+    .cash {
+        width: 574px;
+    }
+
+    .cash input {
+        font-size: 64px;
+    }
+
+    .row {
+        gap: 24px;
+    }
+
+    .fee {
+        font-size: 18px;
+    }
+
+    .controller input {
+        min-width: 275px;
+        max-width: 275px;
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 650px) {
+    header {
+        padding: 24px;
+    }
+
+    .cash {
+        width: 100%;
+    }
+
+    .cash input {
+        font-size: 48px;
+    }
+
+    .row {
+        padding: 24px;
+        flex-direction: column;
+    }
+
+    .fee {
+        font-size: 14px;
+    }
+
+    .controller .group {
+        margin-top: 18px;
+    }
+
+    .controller input {
+        max-width: 100%;
+        width: 100%;
+        padding: 8px 12px;
+        font-size: 18px;
+    }
+}

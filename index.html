@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <div class="cash">
+                <label id="reset" for="start">Start Cash</label>
+                <input id="start" type="number" value="0">
+                <label for="cash">Real Cash</label>
+                <input id="cash" type="number" value="0" readonly>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col">
+                <div class="fee">
+                    <p id="b-fee">Rp-0</p>
+                </div>
+                <div class="controller">
+                    <div class="group">
+                        <label for="b-lot">Buy Lot</label>
+                        <input id="b-lot" type="number" value="0" readonly>
+                    </div>
+                    <div class="group">
+                        <label for="b-price">Buy Price</label>
+                        <input id="b-price" type="number" value="0" readonly>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="fee">
+                    <p id="s-fee">Rp-0</p>
+                </div>
+                <div class="controller">
+                    <div class="group">
+                        <label for="s-lot">Sell Lot</label>
+                        <input id="s-lot" type="number" value="0" readonly>
+                    </div>
+                    <div class="group">
+                        <label for="s-price">Sell Price</label>
+                        <input id="s-price" type="number" value="0" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
